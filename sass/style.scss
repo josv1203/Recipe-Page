@@ -34,6 +34,7 @@ section {
     }
 
     h2 {
+
         font: {
             family: 'young serif';
             size: 1.875rem;
@@ -148,7 +149,7 @@ main {
 
     ul {
 
-        /* Se le elimina el margin que se le agrego anteriormente. */
+        /* Se le agrega una margin diferente al de los demas elementos ul */
         margin: {
             left: 1.25rem;
         }
@@ -166,7 +167,6 @@ main {
 
 /* Defino los estilos para la sección de "nutrition"... !!!!TODAVÍA NO SE HA TERMINADO.¡¡¡¡*/
 .section-nutrition {
-
 
     /* Se le elimina el margin que se le agrega anteriormente. */
     margin: 0;

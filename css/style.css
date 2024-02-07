@@ -84,7 +84,7 @@ main > h1 {
   margin-bottom: 0.9375rem;
 }
 .section-preparationTime ul {
-  /* Se le elimina el margin que se le agrego anteriormente. */
+  /* Se le agrega una margin diferente al de los demas elementos ul */
   margin-left: 1.25rem;
 }
 .section-preparationTime ul li {
