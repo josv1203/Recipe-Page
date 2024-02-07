@@ -1,1 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+p,
+span,
+th,
+td {
+  color: #504c49;
+  font-family: Outfit;
+  line-height: 1.5625rem;
+}
+
+.section-preparationTime,
+.section-ingredients,
+.section-instructions {
+  margin-top: 1.875rem;
+}
+
+body {
+  background: #f3e5d8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+
+main {
+  width: 46.0625rem;
+  height: 107.5rem;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 1.25rem;
+}
+main > img {
+  width: 100%;
+  max-height: 18.75rem;
+  border-radius: 0.625rem;
+  margin-bottom: 2.5rem;
+}
+main > h1 {
+  font-family: "young serif";
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #353130;
+  margin-bottom: 1.875rem;
+}
+.section-preparationTime {
+  height: 12.5rem;
+  background-color: #fbf3f8;
+  padding: 1.5625rem;
+  border-radius: 10px;
+}
+.section-preparationTime h2 {
+  font-family: Outfit;
+  font-size: 20px;
+  font-weight: 800;
+  color: #653148;
+  margin-bottom: 0.9375rem;
+}
+.section-preparationTime ul {
+  padding-left: 20px;
+  font-family: Outfit;
+}
+.section-preparationTime ul li {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  color: #653148;
+}
+
+/*# sourceMappingURL=style.css.map */
