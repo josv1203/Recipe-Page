@@ -8,6 +8,8 @@
 $margin-sections: 1.875rem;
 $size-font-text: 1rem;
 
+
+/* Defino los estilos que comparten los elementos p, span, th y td */
 p,
 span,
 th,
@@ -16,20 +18,52 @@ td {
 
     font: {
         family: Outfit;
+        size: 1.0625rem;
+        weight: 400;
     }
 
     line-height: 1.5625rem;
 }
 
-.section-preparationTime,
-.section-ingredients,
-.section-instructions {
+
+/* Defino los estilos que comparten las secciones y algunos de sus elementos hijos. */
+section {
+
     margin: {
         top: $margin-sections;
+    }
+
+    h2 {
+        font: {
+            family: 'young serif';
+            size: 1.875rem;
+            weight: 400;
+        }
+
+        color: #834337;
+
+        margin: {
+            bottom: 1.25rem;
+        }
+    }
+
+    ul {
+        margin: {
+            left: 1.5625rem;
+        }
     }
 }
 
 
+/* Defino los estilos que comparten los elementos li.*/
+li {
+    padding: {
+        left: 1.25rem;
+        bottom: .9375rem;
+    }
+}
+
+/* Defino los estilos para el body de la pagina. */
 body {
 
     background: #f3e5d8;
@@ -44,10 +78,10 @@ body {
     }
 }
 
+/* Defino los estilos para el elemento main, para la imagen y el elemento h1.*/
 main {
 
     width: 46.0625rem;
-    height: 107.5rem;
 
     padding: 2.5rem;
 
@@ -83,13 +117,11 @@ main {
         }
 
     }
-
-    >p {}
 }
 
+
+/* Defino los estilos de la sección "Preparation time" y de los elementos h2 u li que se encuentran en su interior.*/
 .section-preparationTime {
-
-
 
     height: 12.5rem;
 
@@ -104,7 +136,7 @@ main {
         font: {
             family: Outfit;
             size: 20px;
-            weight: 800;
+            weight: 600;
         }
 
         color: #653148;
@@ -116,26 +148,27 @@ main {
 
     ul {
 
-        padding: {
-            left: 20px;
+        /* Se le elimina el margin que se le agrego anteriormente. */
+        margin: {
+            left: 1.25rem;
         }
-
-        font: {
-            family: Outfit;
-        }
-
 
         li {
-
-            padding: {
-                left: 20px;
-                bottom: 15px;
-            }
 
             color: #653148;
 
         }
 
     }
+
+}
+
+
+/* Defino los estilos para la sección de "nutrition"... !!!!TODAVÍA NO SE HA TERMINADO.¡¡¡¡*/
+.section-nutrition {
+
+
+    /* Se le elimina el margin que se le agrega anteriormente. */
+    margin: 0;
 
 }

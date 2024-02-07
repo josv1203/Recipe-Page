@@ -1,24 +1,44 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Defino los estilos que comparten los elementos p, span, th y td */
 p,
 span,
 th,
 td {
   color: #504c49;
   font-family: Outfit;
+  font-size: 1.0625rem;
+  font-weight: 400;
   line-height: 1.5625rem;
 }
 
-.section-preparationTime,
-.section-ingredients,
-.section-instructions {
+/* Defino los estilos que comparten las secciones y algunos de sus elementos hijos. */
+section {
   margin-top: 1.875rem;
 }
+section h2 {
+  font-family: "young serif";
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #834337;
+  margin-bottom: 1.25rem;
+}
+section ul {
+  margin-left: 1.5625rem;
+}
 
+/* Defino los estilos que comparten los elementos li.*/
+li {
+  padding-left: 1.25rem;
+  padding-bottom: 0.9375rem;
+}
+
+/* Defino los estilos para el body de la pagina. */
 body {
   background: #f3e5d8;
   display: flex;
@@ -28,9 +48,9 @@ body {
   margin-bottom: 7.5rem;
 }
 
+/* Defino los estilos para el elemento main, para la imagen y el elemento h1.*/
 main {
   width: 46.0625rem;
-  height: 107.5rem;
   padding: 2.5rem;
   background: #ffffff;
   border-radius: 1.25rem;
@@ -48,6 +68,8 @@ main > h1 {
   color: #353130;
   margin-bottom: 1.875rem;
 }
+
+/* Defino los estilos de la sección "Preparation time" y de los elementos h2 u li que se encuentran en su interior.*/
 .section-preparationTime {
   height: 12.5rem;
   background-color: #fbf3f8;
@@ -57,18 +79,22 @@ main > h1 {
 .section-preparationTime h2 {
   font-family: Outfit;
   font-size: 20px;
-  font-weight: 800;
+  font-weight: 600;
   color: #653148;
   margin-bottom: 0.9375rem;
 }
 .section-preparationTime ul {
-  padding-left: 20px;
-  font-family: Outfit;
+  /* Se le elimina el margin que se le agrego anteriormente. */
+  margin-left: 1.25rem;
 }
 .section-preparationTime ul li {
-  padding-left: 20px;
-  padding-bottom: 15px;
   color: #653148;
+}
+
+/* Defino los estilos para la sección de "nutrition"... !!!!TODAVÍA NO SE HA TERMINADO.¡¡¡¡*/
+.section-nutrition {
+  /* Se le elimina el margin que se le agrega anteriormente. */
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
