@@ -12,14 +12,14 @@ th,
 td {
   color: #504c49;
   font-family: Outfit;
-  font-size: 1rem;
-  font-weight: 400;
   line-height: 1.5625rem;
 }
 
 /* Defino los estilos que comparten las secciones y algunos de sus elementos hijos. */
 section {
   margin-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  border-bottom: 1px solid #e0e0e0;
 }
 section h2 {
   font-family: "young serif";
@@ -28,7 +28,8 @@ section h2 {
   color: #834337;
   margin-bottom: 1.25rem;
 }
-section ul {
+section ul,
+section ol {
   margin-left: 1.5625rem;
 }
 
@@ -36,6 +37,11 @@ section ul {
 li {
   padding-left: 1.25rem;
   padding-bottom: 0.9375rem;
+  color: #834337;
+}
+li::marker {
+  font-family: Outfit;
+  font-weight: 600;
 }
 
 /* Defino los estilos para el body de la pagina. */
@@ -75,6 +81,9 @@ main > h1 {
   background-color: #fbf3f8;
   padding: 1.5625rem;
   border-radius: 10px;
+  /* Se elimina el padding-bottom y el border-bottom que se agregaron anteriormente.*/
+  border: none;
+  padding-bottom: 0;
 }
 .section-preparationTime h2 {
   font-family: Outfit;
@@ -93,8 +102,9 @@ main > h1 {
 
 /* Defino los estilos para la sección de "nutrition"... !!!!TODAVÍA NO SE HA TERMINADO.¡¡¡¡*/
 .section-nutrition {
-  /* Se le elimina el margin que se le agrega anteriormente. */
-  margin: 0;
+  /* Se le elimina el padding y el border que se le agrega anteriormente. */
+  padding: 0;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
