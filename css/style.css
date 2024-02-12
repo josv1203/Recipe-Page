@@ -140,7 +140,7 @@ main > h1 {
 }
 
 /* Responsive design */
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   html {
     font-size: 14px;
   }
