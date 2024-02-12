@@ -34,7 +34,7 @@ section {
         bottom: $margin-sections;
     }
 
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: .0625rem solid #e0e0e0;
 
     h2 {
 
@@ -72,6 +72,10 @@ li {
             family: Outfit;
             weight: 600;
         }
+    }
+
+    &:last-child {
+        padding-bottom: 0;
     }
 
     color: #834337;
@@ -139,7 +143,7 @@ main {
 /* Defino los estilos de la sección "Preparation time" y de los elementos h2 u li que se encuentran en su interior.*/
 .section-preparationTime {
 
-    height: 12.5rem;
+    /* height: 12.5rem; */
 
     background-color: #fbf3f8;
 
@@ -148,7 +152,7 @@ main {
 
     /* Se elimina el padding-bottom y el border-bottom que se agregaron anteriormente.*/
     border: none;
-    padding-bottom: 0;
+    /*  padding-bottom: 0; */
 
     h2 {
 
@@ -189,5 +193,119 @@ main {
     /* Se le elimina el padding y el border que se le agrega anteriormente. */
     padding: 0;
     border: none;
+
+    >p {
+        margin: {
+            bottom: 1.5625rem;
+        }
+    }
+
+    table {
+
+        width: 100%;
+
+        tr {
+            display: flex;
+
+            border: {
+                bottom: .0625rem solid #e0e0e0;
+            }
+
+
+            /* Se le elimina el borde inferior al ultimo elemento tr */
+            &:last-child {
+                border: {
+                    bottom: none;
+                }
+            }
+
+        }
+    }
+
+
+    th,
+    td {
+
+        flex: 1;
+
+        padding: {
+            top: .9375rem;
+            bottom: .9375rem;
+        }
+
+        text-align: start;
+    }
+
+
+    th {
+
+        padding-left: 1.875rem;
+        font-weight: 400;
+
+    }
+
+    td {
+
+        color: #834337;
+        font-weight: 700;
+
+    }
+
+
+}
+
+
+/* Responsive design */
+
+@media (max-width : 375px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    p,
+    span,
+    th,
+    td {
+
+        font-size: 1.17rem;
+    }
+
+    body {
+        margin: 0;
+    }
+
+
+    main {
+
+        width: 100%;
+        padding: 0;
+
+        border-radius: 0;
+
+        >img {
+            border-radius: 0;
+        }
+
+        >h1,
+        >p {
+            margin: {
+                left: 1.875rem;
+                right: 1.875rem
+            }
+        }
+
+    }
+
+    section {
+
+        margin: {
+            left: 1.875rem;
+            right: 1.875rem;
+        }
+
+    }
+
+
 
 }
